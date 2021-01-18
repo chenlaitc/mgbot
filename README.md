@@ -3,6 +3,7 @@ This is a DIY movable manipulator simulation based on ROS. This robot can be use
 This is a priliminary platfom for beginner in ROS. I hope you can enjoy it.O(∩_∩)O
 
 #Version1.0 2021.1.18
+
 Before using this you need to put these files in your work space and install the following packages: gmapping, navigation, AMCL, openCV, Moveit......
 I recommand you to use sudo apt-get install to install these packages.
 
