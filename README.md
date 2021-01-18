@@ -1,5 +1,5 @@
 # mgbot3
-This is a DIY movable manipulator simulation based on ROS. This robot can be used for test the techneques about motion, manipulation and perception.
+This is a DIY movable manipulator simulation based on ROS. This robot can be used for testing the programs about motion, manipulation and perception.
 This is a priliminary platfom for beginner in ROS. I hope you can enjoy it.O(∩_∩)O
 
 #Version1.0 2021.1.18
