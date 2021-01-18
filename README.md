@@ -1,14 +1,14 @@
 # mgbot3
-This is a DIY movable manipulator simulation based on ROS. This robot can be used for test the techneques about movement, manipulation and perception.
+This is a DIY movable manipulator simulation based on ROS. This robot can be used for test the techneques about motion, manipulation and perception.
 This is a priliminary platfom for beginner in ROS. I hope you can enjoy it.O(∩_∩)O
 
-#Version 1 2021.1.18
+#Version1.0 2021.1.18
 Before using this you need to put these files in your work space and install the following packages: gmapping, navigation, AMCL, openCV, Moveit......
 I recommand you to use sudo apt-get install to install these packages.
 
 Functions and operations:
 
-#Movement#
+#Motion#
 move robot by keyboard:run gazebo_xacro.launch and mgbot3_teleop.launch in mgbot3
 SLAM(gmapping):run gazebo_xacro.launch and gmapping.launch in mgbot3
 Navigation;run gazebo_xacro.launch and nav.launch in mgbot3
