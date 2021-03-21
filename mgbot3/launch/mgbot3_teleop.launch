@@ -1,0 +1,4 @@
+<launch>
+  <node name="mgbot3_teleop" pkg="mgbot3" type="mgbot3_teleop.py" output="screen">
+  </node>
+</launch>

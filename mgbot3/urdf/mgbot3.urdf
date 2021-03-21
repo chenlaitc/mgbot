@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mgbot3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.068339 8.6736E-18 -0.19433"
+        rpy="0 0 0" />
+      <mass
+        value="137.94" />
+      <inertia
+        ixx="6.3738"
+        ixy="-2.2346E-16"
+        ixz="-1.3864"
+        iyy="7.6094"
+        iyz="1.3046E-16"
+        izz="8.7761" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_bracket_joint"
+    type="continuous">
+    <origin
+      xyz="0.29 -0.265 -0.304"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_bracket_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-4.8493E-06 -0.025 -9.4022E-07"
+        rpy="0 0 0" />
+      <mass
+        value="2.7059" />
+      <inertia
+        ixx="0.021276"
+        ixy="1.6819E-08"
+        ixz="1.4738E-07"
+        iyy="0.040747"
+        iyz="1.2499E-08"
+        izz="0.021275" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.17499 0.3 -0.45"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="1.2505E-05 1 0" />
+    <limit
+      effort="100"
+      velocity="15" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="2.1448E-06 0.025 -4.4497E-06"
+        rpy="0 0 0" />
+      <mass
+        value="2.7059" />
+      <inertia
+        ixx="0.021275"
+        ixy="3.2647E-11"
+        ixz="-8.9311E-10"
+        iyy="0.040747"
+        iyz="-2.0955E-08"
+        izz="0.021276" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.175 -0.3 -0.45"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="1.2505E-05 1 0" />
+    <limit
+      effort="100"
+      velocity="15" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="left_bracket_link">
+    <inertial>
+      <origin
+        xyz="0.0063707 -0.00045456 -0.030819"
+        rpy="0 0 0" />
+      <mass
+        value="0.9319" />
+      <inertia
+        ixx="0.0071346"
+        ixy="1.3642E-05"
+        ixz="0.00099191"
+        iyy="0.0073249"
+        iyz="-7.0774E-05"
+        izz="0.00097939" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_bracket_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_bracket_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_bracket_joint"
+    type="continuous">
+    <origin
+      xyz="0.29 0.265 -0.304"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_bracket_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="left_caster_link">
+    <inertial>
+      <origin
+        xyz="-0.0017792 -0.024937 -2.7606E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.2416" />
+      <inertia
+        ixx="0.0027261"
+        ixy="0.00013395"
+        ixz="1.2378E-09"
+        iyy="0.0045939"
+        iyz="-2.5566E-10"
+        izz="0.0027165" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_caster_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/left_caster_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_caster_joint"
+    type="continuous">
+    <origin
+      xyz="0.061627 0.020666 -0.209"
+      rpy="0 0 0" />
+    <parent
+      link="left_bracket_link" />
+    <child
+      link="left_caster_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="right_bracket_link">
+    <inertial>
+      <origin
+        xyz="0.0063812 -0.00026976 -0.030819"
+        rpy="0 0 0" />
+      <mass
+        value="0.9319" />
+      <inertia
+        ixx="0.007134"
+        ixy="8.1094E-06"
+        ixz="0.00099354"
+        iyy="0.0073255"
+        iyz="-4.2001E-05"
+        izz="0.00097939" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_bracket_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_bracket_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_bracket_joint"
+    type="continuous">
+    <origin
+      xyz="0.29 -0.265 -0.304"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_bracket_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="right_caster_link">
+    <inertial>
+      <origin
+        xyz="0.001056 0.024978 2.7902E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.2416" />
+      <inertia
+        ixx="0.0027199"
+        ixy="7.9631E-05"
+        ixz="9.0728E-11"
+        iyy="0.0046001"
+        iyz="4.5148E-12"
+        izz="0.0027165" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_caster_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/right_caster_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_caster_joint"
+    type="continuous">
+    <origin
+      xyz="0.0588904759761545 -0.0275118666696804 -0.209000324152001"
+      rpy="0 0 0" />
+    <parent
+      link="right_bracket_link" />
+    <child
+      link="right_caster_link" />
+    <axis
+      xyz="0.0422363104361328 0.999107648895124 0" />
+  </joint>
+  <link
+    name="sensor_link">
+    <inertial>
+      <origin
+        xyz="-0.025 2.2482E-14 7.1942E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.5" />
+      <inertia
+        ixx="0.00083333"
+        ixy="-1.0595E-21"
+        ixz="-9.9915E-19"
+        iyy="0.00052083"
+        iyz="-5.5203E-20"
+        izz="0.00052083" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/sensor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/sensor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sensor_joint"
+    type="fixed">
+    <origin
+      xyz="0.4 0 -0.095"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="sensor2_link">
+    <inertial>
+      <origin
+        xyz="-0.05 1.7347E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.5" />
+      <inertia
+        ixx="0.00052083"
+        ixy="6.6128E-20"
+        ixz="1.0196E-21"
+        iyy="0.00052083"
+        iyz="2.7015E-20"
+        izz="0.00083333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/sensor2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/sensor2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sensor2_joint"
+    type="fixed">
+    <origin
+      xyz="0.35 0 0.025"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm1_link">
+    <inertial>
+      <origin
+        xyz="-3.7863E-05 0.00081003 0.00023636"
+        rpy="0 0 0" />
+      <mass
+        value="0.61578" />
+      <inertia
+        ixx="0.00076129"
+        ixy="2.9379E-07"
+        ixz="-3.5384E-07"
+        iyy="0.00077457"
+        iyz="3.4657E-06"
+        izz="0.0010029" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm1_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.045984"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="arm1_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="arm2_link">
+    <inertial>
+      <origin
+        xyz="-0.02125 2.7466E-06 0.0080529"
+        rpy="0 0 0" />
+      <mass
+        value="0.77914" />
+      <inertia
+        ixx="0.0011753"
+        ixy="1.5458E-07"
+        ixz="0.00011268"
+        iyy="0.0012816"
+        iyz="-7.4453E-08"
+        izz="0.00095604" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm2_joint"
+    type="continuous">
+    <origin
+      xyz="0.013357 0 0.087517"
+      rpy="0 0 0" />
+    <parent
+      link="arm1_link" />
+    <child
+      link="arm2_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="arm3_link">
+    <inertial>
+      <origin
+        xyz="-0.0080529 -0.0012034 0.021216"
+        rpy="0 0 0" />
+      <mass
+        value="0.77914" />
+      <inertia
+        ixx="0.00095603"
+        ixy="-6.4374E-06"
+        ixz="0.0001125"
+        iyy="0.0012813"
+        iyz="6.1522E-06"
+        izz="0.0011757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.11481 0.00075266 0.0067061"
+      rpy="0 0 0" />
+    <parent
+      link="arm2_link" />
+    <child
+      link="arm3_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="arm4_link">
+    <inertial>
+      <origin
+        xyz="1.1676E-05 0.00053067 -0.0093774"
+        rpy="0 0 0" />
+      <mass
+        value="0.55259" />
+      <inertia
+        ixx="0.0012189"
+        ixy="-8.332E-09"
+        ixz="1.4784E-07"
+        iyy="0.0012158"
+        iyz="4.9274E-05"
+        izz="0.00034789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.02004 -0.0082617 0.14601"
+      rpy="0 0 0" />
+    <parent
+      link="arm3_link" />
+    <child
+      link="arm4_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="arm5_link">
+    <inertial>
+      <origin
+        xyz="-0.0081691 0.0017175 -0.03016"
+        rpy="0 0 0" />
+      <mass
+        value="0.35676" />
+      <inertia
+        ixx="0.00030936"
+        ixy="2.2854E-06"
+        ixz="-3.9977E-05"
+        iyy="0.00031098"
+        iyz="2.3006E-06"
+        izz="0.00027238" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm5_joint"
+    type="continuous">
+    <origin
+      xyz="0.015537 -0.0076137 0.13455"
+      rpy="0 0 0" />
+    <parent
+      link="arm4_link" />
+    <child
+      link="arm5_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="arm6_link">
+    <inertial>
+      <origin
+        xyz="-0.0078132 -0.00032329 0.0056769"
+        rpy="0 0 0" />
+      <mass
+        value="0.31598" />
+      <inertia
+        ixx="0.00025569"
+        ixy="3.6412E-06"
+        ixz="-6.4373E-05"
+        iyy="0.0002862"
+        iyz="3.6305E-06"
+        izz="0.00022223" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm6_joint"
+    type="continuous">
+    <origin
+      xyz="0.069287 0.00080628 -0.014231"
+      rpy="0 0 0" />
+    <parent
+      link="arm5_link" />
+    <child
+      link="arm6_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="arm7_link">
+    <inertial>
+      <origin
+        xyz="-5.2746E-11 2.7029E-05 -0.00047757"
+        rpy="0 0 0" />
+      <mass
+        value="0.32104" />
+      <inertia
+        ixx="0.00056005"
+        ixy="-2.4364E-09"
+        ixz="-1.3863E-10"
+        iyy="0.00055867"
+        iyz="2.4482E-05"
+        izz="0.00012745" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm7_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm7_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm7_joint"
+    type="continuous">
+    <origin
+      xyz="0.0083871 -0.0059399 0.10494"
+      rpy="0 0 0" />
+    <parent
+      link="arm6_link" />
+    <child
+      link="arm7_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="arm8_link">
+    <inertial>
+      <origin
+        xyz="-0.0063847 0.00092875 -0.016517"
+        rpy="0 0 0" />
+      <mass
+        value="0.27617" />
+      <inertia
+        ixx="0.00017688"
+        ixy="9.3235E-07"
+        ixz="-1.6482E-05"
+        iyy="0.00021368"
+        iyz="1.8126E-06"
+        izz="0.00018174" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm8_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm8_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm8_joint"
+    type="continuous">
+    <origin
+      xyz="0.011917 -0.0067575 0.1194"
+      rpy="0 0 0" />
+    <parent
+      link="arm7_link" />
+    <child
+      link="arm8_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="arm9_link">
+    <inertial>
+      <origin
+        xyz="-0.016543 0.00036659 -0.0063741"
+        rpy="0 0 0" />
+      <mass
+        value="0.27617" />
+      <inertia
+        ixx="0.00018164"
+        ixy="9.333E-07"
+        ixz="-1.6481E-05"
+        iyy="0.00021365"
+        iyz="2.0818E-06"
+        izz="0.00017699" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm9_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm9_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm9_joint"
+    type="continuous">
+    <origin
+      xyz="0.084269 -0.00015841 0.0028264"
+      rpy="0 0 0" />
+    <parent
+      link="arm8_link" />
+    <child
+      link="arm9_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="arm10_link">
+    <inertial>
+      <origin
+        xyz="-0.00638472426455181 0.000928751626483423 -0.0165169831423235"
+        rpy="0 0 0" />
+      <mass
+        value="0.27617157915883" />
+      <inertia
+        ixx="0.000176878560442398"
+        ixy="9.32366898445191E-07"
+        ixz="-1.6481565018826E-05"
+        iyy="0.000213677596893029"
+        iyz="1.81263896664169E-06"
+        izz="0.000181738349035618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm10_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm10_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm10_joint"
+    type="continuous">
+    <origin
+      xyz="0.0028308 -0.0047628 0.084134"
+      rpy="0 0 0" />
+    <parent
+      link="arm9_link" />
+    <child
+      link="arm10_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="arm11_link">
+    <inertial>
+      <origin
+        xyz="-0.020427 0.00024649 0.00030992"
+        rpy="0 0 0" />
+      <mass
+        value="0.11536" />
+      <inertia
+        ixx="5.9067E-05"
+        ixy="6.4256E-08"
+        ixz="8.0788E-08"
+        iyy="4.2551E-05"
+        iyz="1.036E-07"
+        izz="4.2599E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm11_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mgbot3/meshes/arm11_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm11_joint"
+    type="continuous">
+    <origin
+      xyz="0.069683 0.00020337 -0.0094628"
+      rpy="0 0 0" />
+    <parent
+      link="arm10_link" />
+    <child
+      link="arm11_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+</robot>

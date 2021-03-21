@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<robot 
+     xmlns:xacro="http://www.ros.org/wiki/xacro" name="color">
+
+
+ <!-- link_color -->
+   <gazebo reference="base_link">
+        <material>Gazebo/Gray</material>
+  </gazebo>
+
+   <gazebo reference="left_wheel_link">
+        <material>Gazebo/Black</material>
+  </gazebo>
+
+   <gazebo reference="right_wheel_link">
+        <material>Gazebo/Black</material>
+  </gazebo>
+
+   <gazebo reference="left_caster_link">
+        <material>Gazebo/Black</material>
+  </gazebo>
+
+   <gazebo reference="right_caster_link">
+        <material>Gazebo/Black</material>
+  </gazebo>
+
+   <gazebo reference="sensor_link">
+        <material>Gazebo/Red</material>
+  </gazebo>
+
+   <gazebo reference="sensor1_link">
+        <material>Gazebo/Red</material>
+  </gazebo>
+
+   <gazebo reference="arm1_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm2_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm3_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+   <gazebo reference="arm4_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm5_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm6_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>   <gazebo reference="arm3_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm7_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm8_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+   <gazebo reference="arm9_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>   <gazebo reference="arm3_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm10_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+   <gazebo reference="arm11_link">
+        <material>Gazebo/Orange</material>
+  </gazebo>
+
+</robot>
+
